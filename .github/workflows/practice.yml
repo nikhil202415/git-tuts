@@ -1,0 +1,14 @@
+name: GitHub Actions Practice
+
+on: push
+
+jobs:
+  practice-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: List all files
+        run: ls -la
+      - name: Print success message
+        run: echo "GitHub Actions practice workflow executed successfully"
